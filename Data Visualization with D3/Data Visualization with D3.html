@@ -19,7 +19,9 @@
        .data(dataset)
        .enter()
        .append("rect")
+       .attr("x", (d, i) => i * 30)
        .attr("width", 25)
+       .attr("height", (d, i) => 3 * d);
   </script>
 </body>
 
